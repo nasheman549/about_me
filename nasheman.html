@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nasheman Arshad | Computer Engineer & Graphic Designer</title>
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#080b18;
+    color:#ffffff;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(8,11,24,0.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+}
+
+
+.logo span{
+    color:#00e5ff;
+}
+
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+
+nav ul li a{
+    text-decoration:none;
+    color:#ddd;
+    font-size:15px;
+    transition:.3s;
+}
+
+
+nav ul li a:hover{
+    color:#00e5ff;
+}
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+    min-height:100vh;
+    padding:150px 8% 80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+
+}
+
+
+
+.hero-content{
+
+    max-width:650px;
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+.hero h1{
+
+    font-size:60px;
+    margin-bottom:15px;
+
+}
+
+
+
+.hero h1 span{
+
+    color:#00e5ff;
+
+}
+
+
+
+.hero h2{
+
+    color:#a5b4fc;
+    font-size:22px;
+    margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+    color:#cbd5e1;
+    font-size:18px;
+
+}
+
+
+
+.buttons{
+
+    margin-top:35px;
+    display:flex;
+    gap:20px;
+
+}
+
+
+.btn{
+
+    padding:13px 30px;
+    border-radius:30px;
+    background:#00e5ff;
+    color:#001018;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #00e5ff;
+
+}
+
+
+.second{
+
+    background:transparent;
+    border:2px solid #00e5ff;
+    color:white;
+
+}
+
+
+
+
+.profile-card{
+
+
+    background:linear-gradient(145deg,#111827,#1e293b);
+    padding:40px;
+    border-radius:25px;
+    width:320px;
+    text-align:center;
+
+    animation:float 4s infinite ease-in-out;
+
+    border:1px solid rgba(0,229,255,.3);
+
+}
+
+
+
+.profile-card h3{
+
+    color:#00e5ff;
+    font-size:25px;
+
+}
+
+
+.status{
+
+    margin-top:20px;
+    color:#22c55e;
+
+}
+
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+    padding:90px 8%;
+
+}
+
+
+
+.title{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#00e5ff;
+
+}
+
+
+
+
+/* ABOUT */
+
+
+.about-box{
+
+    max-width:850px;
+    margin:auto;
+
+    background:#111827;
+    padding:35px;
+    border-radius:20px;
+
+    color:#ddd;
+
+}
+
+
+
+
+
+
+
+/* EDUCATION */
+
+
+.education-card{
+
+    background:#111827;
+    padding:25px;
+    margin:20px auto;
+    max-width:700px;
+
+    border-radius:15px;
+    border-left:5px solid #00e5ff;
+
+    transition:.3s;
+
+}
+
+
+
+.education-card:hover{
+
+    transform:translateX(10px);
+
+}
+
+
+.education-card h3{
+
+    color:#00e5ff;
+
+}
+
+.education-card span{
+
+    color:#94a3b8;
+
+}
+
+
+
+
+
+
+/* PROJECTS */
+
+
+.project-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+
+}
+
+
+.project-card{
+
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+
+    border:1px solid #1e293b;
+
+    transition:.4s;
+
+}
+
+
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+    border-color:#00e5ff;
+
+    box-shadow:0 10px 30px rgba(0,229,255,.2);
+
+}
+
+
+
+.project-card h3{
+
+    color:#00e5ff;
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+/* GRAPHIC DESIGN */
+
+
+.design-box{
+
+    max-width:700px;
+    margin:auto;
+
+    background:#111827;
+    padding:35px;
+    border-radius:20px;
+
+}
+
+
+
+.design-box h3{
+
+    color:#00e5ff;
+    margin-bottom:20px;
+
+}
+
+
+
+.design-box ul{
+
+    list-style:none;
+
+}
+
+
+
+.design-box li{
+
+    padding:10px;
+    border-bottom:1px solid #334155;
+
+}
+
+
+
+
+
+
+
+/* SKILLS */
+
+
+.skills-box{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+
+
+.skills-box div{
+
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+
+
+.skills-box h3{
+
+    color:#00e5ff;
+
+}
+
+
+
+
+
+
+/* CERTIFICATES */
+
+
+.certificate-gallery{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+
+
+.certificate{
+
+    background:#111827;
+    padding:20px;
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+
+
+.certificate:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+.certificate img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+
+}
+
+
+
+.certificate h3{
+
+    margin-top:15px;
+    color:#00e5ff;
+
+}
+
+
+
+
+
+
+/* CONTACT */
+
+
+.contact-box{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+
+}
+
+
+.contact-box p{
+
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+footer{
+
+    text-align:center;
+    padding:30px;
+    background:#050816;
+    color:#94a3b8;
+
+}
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+nav{
+
+    padding:20px;
+
+}
+
+
+nav ul{
+
+    display:none;
+
+}
+
+
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+
+
+.profile-card{
+
+    width:100%;
+
+}
+
+
+
+.buttons{
+
+    justify-content:center;
+
+}
+
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">NA<span>.</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Nasheman <span>Arshad</span>
+</h1>
+
+<h2>
+Computer Engineer | Machine Learning | Frontend Developer | Embedded Systems | Graphic Designer
+</h2>
+
+
+<p>
+I build intelligent systems to make computer networks safer using Machine Learning. As a final year 
+Computer Engineering student, I'm working on an ML-based Network Intrusion Detection System 
+for my Final Year Project. 
+
+</p>
+
+
+<div class="buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="#contact" class="btn second">
+Contact Me
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="profile-card">
+
+<h3>Computer Engineer</h3>
+
+<p>
+COMSATS University Islamabad
+Abbottabad Campus
+</p>
+
+
+<div class="status">
+● Available for Opportunities
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
+
+<h2 class="title">
+About Me
+</h2>
+
+
+<div class="about-box">
+
+
+<p>
+I am a Final year Computer Engineering student passionate about Computer Networks, Cybersecurity,
+Embedded Systems, Machine Learning, Web Designing and Creative Graphic Designing.
+Currently working on my final year project in the field of AI-based cybersecurity.
+</p>
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- EDUCATION -->
+
+
+<section id="education">
+
+<h2 class="title">
+Education
+</h2>
+
+
+<div class="education-card">
+
+
+<h3>
+BS Computer Engineering
+</h3>
+
+<p>
+COMSATS University Islamabad
+Abbottabad Campus
+</p>
+
+
+<span>
+2022 - Present
+</span>
+
+
+</div>
+
+
+
+<div class="education-card">
+
+<h3>
+FSc Pre Engineering
+</h3>
+
+<p>
+GGDC No.1 Abbottabad
+</p>
+
+
+<span>
+2021 - 2022
+</span>
+
+</div>
+
+
+
+<div class="education-card">
+
+<h3>
+SSC (Science)
+</h3>
+
+<p>
+Khyber Muslim Academy Abbottabad
+</p>
+
+
+<span>
+2019 - 2020
+</span>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- PROJECTS -->
+
+
+<section id="projects">
+
+
+<h2 class="title">
+Projects
+</h2>
+
+
+
+<div class="project-container">
+
+
+<div class="project-card">
+
+<h3>
+ML Based Network Intrusion Detection System
+</h3>
+
+<p>
+Final Year Project using Machine Learning for detecting malicious
+network activities.
+</p>
+
+</div>
+
+
+
+<div class="project-card">
+
+<h3>
+Light Intensity Monitoring System
+</h3>
+
+<p>
+PIC18F452 based embedded system using LDR sensor, LCD and LEDs.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>
+   Admission Form Verification System 
+</h3>
+
+<p>
+Developed a system to verify and validate admission data
+</p>
+
+</div>
+
+
+
+
+<div class="project-card">
+
+<h3>
+Image Classification System
+</h3>
+
+<p>
+Machine Learning model for image recognition and classification.
+</p>
+
+</div>
+
+
+
+
+<div class="project-card">
+
+<h3>
+Gesture Controlled PowerPoint
+</h3>
+
+<p>
+Computer vision based hand gesture presentation controller.
+</p>
+
+</div>
+<div class="project-card">
+
+<h3>
+RISC-V Single Cycle Processor Modification Project
+</h3>
+
+<p>
+Designed a single-cycle RISC-V processor architecture  
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- GRAPHIC DESIGNER -->
+
+
+<section id="design">
+
+
+<h2 class="title">
+Graphic Designer
+</h2>
+
+
+<div class="design-box">
+
+
+<h3>
+Creative Design Skills
+</h3>
+
+
+<ul>
+
+<li>Graphic Designing</li>
+
+<li>UI/UX Design</li>
+
+<li>Adobe Illustrator</li>
+
+<li>Canva Designing</li>
+
+<li>Logo & Branding Design</li>
+
+<li>Social Media Designs</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- SKILLS -->
+
+
+<section id="skills">
+
+
+<h2 class="title">
+Technical Skills
+</h2>
+
+
+
+<div class="skills-box">
+
+
+<div>
+<h3>
+Programming
+</h3>
+
+<p>
+Python, C, HTML, CSS, JavaScript
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Machine Learning
+</h3>
+
+<p>
+Data Processing, Classification.
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+Embedded Systems
+</h3>
+
+<p>
+PIC18F452, Microcontrollers, IOT.
+</p>
+
+</div>
+<div>
+
+<h3>
+graphic Designing
+</h3>
+
+<p>
+Adobe photoshop, Adobe Illustrator, Canva. 
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CERTIFICATES -->
+
+
+<section id="certificates">
+
+
+<h2 class="title">
+Certificates
+</h2>
+
+
+<div class="certificate-gallery">
+
+
+<div class="certificate">
+<img src="images/cyber.jpg">
+<h3>
+Cybersecurity Workshop
+</h3>
+</div>
+
+
+
+<div class="certificate">
+
+<img src="images/iot.jpg">
+
+<h3>
+IoT Workshop
+</h3>
+
+</div>
+
+
+
+<div class="certificate">
+
+<img src="images/graphic.jpg">
+
+<h3>
+Graphic Designing Certificate
+</h3>
+
+</div>
+
+
+
+
+<div class="certificate">
+
+<img src="images/civil.jpg">
+
+<h3>
+Civil Society Certificate
+</h3>
+
+</div>
+
+
+
+<div class="certificate">
+
+<img src="images/award.jpg">
+
+<h3>
+Best Leader Award
+</h3>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Contact
+</h2>
+
+
+<div class="contact-box">
+
+
+<p>
+Email:
+<br class="nash">
+nashaman123456k@gmail.com
+</p>
+
+
+<p>
+Phone:
++92 320 9350147
+</p>
+
+
+<p>
+Location:
+Abbottabad, Pakistan
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Nasheman Arshad | Computer Engineer
+</p>
+
+</footer>
+
+
+
+<script src="script.js">
+// ===============================
+// Scroll Reveal Animation
+// ===============================
+
+const elements = document.querySelectorAll(
+    "section, .project-card, .education-card, .certificate, .skills-box div, .design-box"
+);
+
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+
+
+elements.forEach(element=>{
+
+    element.classList.add("hidden");
+
+    observer.observe(element);
+
+});
+
+
+
+
+
+// ===============================
+// Certificate Image Preview
+// ===============================
+
+
+const certificates = document.querySelectorAll(".certificate img");
+
+
+certificates.forEach(image=>{
+
+
+    image.addEventListener("click",()=>{
+
+
+        const overlay = document.createElement("div");
+
+
+        overlay.style.position="fixed";
+        overlay.style.top="0";
+        overlay.style.left="0";
+        overlay.style.width="100%";
+        overlay.style.height="100%";
+        overlay.style.background="rgba(0,0,0,0.9)";
+        overlay.style.display="flex";
+        overlay.style.alignItems="center";
+        overlay.style.justifyContent="center";
+        overlay.style.zIndex="2000";
+        overlay.style.cursor="pointer";
+
+
+
+        const bigImage=document.createElement("img");
+
+
+        bigImage.src=image.src;
+
+
+        bigImage.style.maxWidth="85%";
+        bigImage.style.maxHeight="85%";
+        bigImage.style.borderRadius="15px";
+        bigImage.style.boxShadow="0 0 40px #00e5ff";
+
+
+
+        overlay.appendChild(bigImage);
+
+
+        document.body.appendChild(overlay);
+
+
+
+        overlay.onclick=()=>{
+
+            overlay.remove();
+
+        }
+
+
+    });
+
+
+});
+
+
+
+
+
+
+// ===============================
+// Active Navigation Highlight
+// ===============================
+
+
+const sections=document.querySelectorAll("section");
+const navLinks=document.querySelectorAll("nav a");
+
+
+window.addEventListener("scroll",()=>{
+
+
+let current="";
+
+
+sections.forEach(section=>{
+
+
+    const sectionTop=section.offsetTop-150;
+
+
+    if(scrollY >= sectionTop){
+
+        current=section.getAttribute("id");
+
+    }
+
+
+});
+
+
+
+navLinks.forEach(link=>{
+
+
+    link.style.color="#ddd";
+
+
+    if(link.getAttribute("href")==="#"+current){
+
+        link.style.color="#00e5ff";
+
+    }
+
+
+});
+
+
+});
+
+
+
+
+
+
+// ===============================
+// Button Click Animation
+// ===============================
+
+
+const buttons=document.querySelectorAll(".btn");
+
+
+buttons.forEach(btn=>{
+
+
+btn.addEventListener("click",()=>{
+
+
+    btn.style.transform="scale(.95)";
+
+
+    setTimeout(()=>{
+
+        btn.style.transform="";
+
+    },150);
+
+
+});
+
+
+});
+
+
+
+
+
+// ===============================
+// Add current year automatically
+// ===============================
+
+
+const footer=document.querySelector("footer p");
+
+
+if(footer){
+
+    const year=new Date().getFullYear();
+
+    footer.innerHTML=
+    `© ${year} Nasheman Arshad | Computer Engineer`;
+
+}
+</script>
+
+</body>
+</html>
