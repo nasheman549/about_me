@@ -152,10 +152,17 @@
   .mobile-socials svg{ width:18px; height:18px; fill:currentColor; }
 
   .scrim{
-    display:none; position:fixed; inset:0; z-index:1400;
-    background:rgba(0,0,0,.5); opacity:0; transition:opacity .35s ease;
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:1400;
+    background:rgba(0,0,0,.5);
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .35s ease;
   }
-  .scrim.open{ opacity:1; }
+  .scrim.open{   opacity:1;
+    pointer-events:auto; }
 
   .hero{
     min-height:100vh; padding:150px var(--edge) 100px;
@@ -439,7 +446,11 @@
 
     nav ul{ display:none; }
     .menu-btn{ display:block; }
-    .mobile-panel, .scrim{ display:flex; }
+    .mobile-panel
+    { display:flex; }
+    .scrim{
+    display:block;
+}
 
     .hero{
       flex-direction:column-reverse; padding:110px var(--edge) 60px; gap:40px;
@@ -484,6 +495,18 @@
   @media(max-width:420px){
     .certificate-gallery{ grid-template-columns:1fr; }
   }
+  #network-bg,
+#network-canvas,
+.grain{
+    pointer-events:none;
+}
+
+a,
+button{
+    position:relative;
+    z-index:5;
+    pointer-events:auto;
+}
 </style>
 </head>
 
